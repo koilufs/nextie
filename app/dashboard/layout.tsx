@@ -1,5 +1,3 @@
-import Navbar from "@/components/Navbar"
-import "./global.css"
 import { Rubik } from 'next/font/google'
 
 const rubik = Rubik({
@@ -13,11 +11,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-    <body className={rubik.className}>
-        <Navbar />
+    <main className={rubik.className}>
         {children}
-    </body>
-    </html>
+    </main>
   )
 }
